@@ -1,5 +1,7 @@
 configuration:
   usefixedtime: true
+  pathverificationperiod: 10000
+  teststring: "CHANGEME"
 camel:
   springboot:
     main-run-controller: true

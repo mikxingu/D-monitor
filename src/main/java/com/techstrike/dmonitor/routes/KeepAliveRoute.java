@@ -8,8 +8,8 @@ public class KeepAliveRoute extends RouteBuilder{
 
 	@Override
 	public void configure() throws Exception {
-		from("timer:keepalive?period=10000")
-		.to("log:APPLICATION IS WORKING");
+		from("timer:keepalive?period={{configuration.pathverificationperiod}}")
+		.to("log:{{configuration.teststring");
 		
 	}
 
